@@ -9,7 +9,7 @@ public class RecycleInfo {
 
     public RecycleInfo() {
         blueBin = new ArrayList<>();
-        garblueBin ArrayList<>();
+        garbage = new ArrayList<>();
 
         loadRecycleInfo();
         loadGarbageInfo();
