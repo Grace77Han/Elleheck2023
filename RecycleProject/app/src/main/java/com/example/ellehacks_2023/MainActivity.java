@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
         searchBarButton = (Button) findViewById(R.id.searchBarButton);
-        imageSearchButton = (Button) findViewById(R.id.imageSearchButton);
+
         image = (ImageView) findViewById(R.id.outputImage);
         searchBarButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,12 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 computeSearchButtonClicked(v);
             }
         });
-        imageSearchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                computeImageSearchButtonClicked(v);
-            }
-        });
+//        imageSearchButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                computeImageSearchButtonClicked(v);
+//            }
+//        });
     }
 
     @Override
