@@ -21,7 +21,6 @@ public class RecycleInfo {
     }
 
     private void loadBlueBinInfo() { // Helper for constructor: It updates arrayLists
-        blueBin.add("glass");
         blueBin.add("glass bottle");
         blueBin.add("glass jar");
         blueBin.add("rigid plastic");
@@ -52,7 +51,7 @@ public class RecycleInfo {
         blueBin.add("cardboard");
         blueBin.add("boxboard");
         blueBin.add("detergent box");
-        blueBin.add("shoe box");
+        blueBin.add("shoes box");
         blueBin.add("tissue box");
         blueBin.add("roll");
         blueBin.add("toilet paper box");
@@ -69,7 +68,47 @@ public class RecycleInfo {
         blueBin.add("protective packaging");
     }
     private void loadGreenBinInfo() { // Helper for constructor: It updates arrayLists
-    	// to do
+    	greenBin.add("food waste");
+    	greenBin.add("vegetable scrap");
+    	greenBin.add("vegetable peel");
+    	greenBin.add("corn cob");
+    	greenBin.add("corn husk");
+    	greenBin.add("fruit core");
+    	greenBin.add("fruit pit");
+    	greenBin.add("fruit peel");
+    	greenBin.add("meat");
+    	greenBin.add("poultry");
+    	greenBin.add("fish");
+    	greenBin.add("shellfish");
+    	greenBin.add("bone");
+    	greenBin.add("pasta");
+    	greenBin.add("bread");
+    	greenBin.add("grain");
+    	greenBin.add("cereal");
+    	greenBin.add("rice");
+    	greenBin.add("flour");
+    	greenBin.add("dairy");
+    	greenBin.add("egg");
+    	greenBin.add("egg shell");
+    	greenBin.add("nut");
+    	greenBin.add("nutshell");
+    	greenBin.add("baked goods");
+    	greenBin.add("dessert");
+    	greenBin.add("paper napkin");
+    	greenBin.add("paper towel");
+    	greenBin.add("tissue");
+    	greenBin.add("coffee ground");
+    	greenBin.add("coffee filter");
+    	greenBin.add("tea bag");
+    	greenBin.add("food-soiled paper plate");
+    	greenBin.add("food-soiled takeout container");
+    	greenBin.add("paper muffin cup");
+    	greenBin.add("food-soiled pizza boxes");
+    	greenBin.add("house plant");
+    	greenBin.add("soil");
+    	greenBin.add("pet waste");
+    	greenBin.add("diaper");
+    	greenBin.add("feminine hygiene product");
     }
     
     private void loadGarbageInfo() { // Helper for constructor: It updates arrayLists
@@ -90,16 +129,16 @@ public class RecycleInfo {
         garbage.add("gauze");
         garbage.add("catheter");
         garbage.add("colostomy bag");
-        garbage.add("IV bag");
-        garbage.add("IV tubing");
+        garbage.add("iv bag");
+        garbage.add("iv tubing");
         garbage.add("dialysis waste");
-        garbage.add("household hazardous waste");
-        garbage.add("propane");
-        garbage.add("helium tank");
-        garbage.add("battery");
-        garbage.add("compact fluorescent light bulb");
-        garbage.add("pesticide");
-        garbage.add("paint");
+        //garbage.add("household hazardous waste");
+        //garbage.add("propane");
+        //garbage.add("helium tank");
+        //garbage.add("battery");
+        //garbage.add("compact fluorescent light bulb");
+        //garbage.add("pesticide");
+        //garbage.add("paint");
         garbage.add("plastic packaging");
         garbage.add("black plastic");
         garbage.add("black plastic bag");
@@ -109,7 +148,73 @@ public class RecycleInfo {
         garbage.add("compostable bag");
         garbage.add("compostable container");
         garbage.add("compostable cutlery");
-        // (Yeseul) I need to add more info!
+        garbage.add("biodegradable bag");
+        garbage.add("biodegradable container");
+        garbage.add("biodegradable cutlery");
+        garbage.add("stand-up resealable pouch bag");
+        garbage.add("liner bag");
+        garbage.add("cereal liner bag");
+        garbage.add("cookie liner bag");
+        garbage.add("craker liner bag");
+        garbage.add("food wrap");
+        garbage.add("bubble wrap");
+        garbage.add("pet food wrap");
+        garbage.add("squeeze tube");
+        garbage.add("toothpaste tube");
+        garbage.add("lotion tube");
+        garbage.add("paint can");
+        garbage.add("plastic straw");
+        garbage.add("plastic binder");
+        garbage.add("plastic toy");
+        garbage.add("plastic clothes hanger");
+        garbage.add("cassette");
+        garbage.add("cd");
+        garbage.add("dvd");
+        garbage.add("drinking glass");
+        garbage.add("glass dish");
+        garbage.add("glass cup");
+        garbage.add("crystal");
+        garbage.add("ceramic");
+        garbage.add("pottery");
+        garbage.add("window glass");
+        garbage.add("light bulb");
+        garbage.add("mirror");
+        garbage.add("glass pot");
+        garbage.add("glass pan");
+        garbage.add("metal tool");
+        garbage.add("scrap metal");
+        garbage.add("auto parts");
+        garbage.add("metal clothes hanger");
+        garbage.add("metal pot");
+        garbage.add("metal pan");
+        garbage.add("electronic");
+        garbage.add("metal kettle");
+        garbage.add("metal toaster");
+        garbage.add("metal hair dryer");
+        garbage.add("foil food wrap");
+        garbage.add("potato chip bag");
+        garbage.add("metallic gift wrap");
+        garbage.add("blister pack");
+        garbage.add("gum pack");
+        garbage.add("clothes");
+        garbage.add("shoes");
+        garbage.add("carpet");
+        garbage.add("curtain");
+        garbage.add("bedding");
+        //garbage.add("tissue");
+        //garbage.add("napkin");
+        //garbage.add("paper towel");
+        garbage.add("beverage cup");
+        garbage.add("frozen food box");
+        garbage.add("waxed cardboard");
+        garbage.add("waxed paper");
+        garbage.add("waxed plastic");
+        garbage.add("cable");
+        garbage.add("hose");
+        garbage.add("rope");
+        garbage.add("wood");
+        garbage.add("fruit crate");
+        garbage.add("wood chopsticks");
     }
 
     public String getType(String item) { // Helper for search() : it checks if the item is in any list
