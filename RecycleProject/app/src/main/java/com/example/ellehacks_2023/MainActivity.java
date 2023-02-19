@@ -105,14 +105,14 @@ public class MainActivity extends AppCompatActivity {
     public void computeSearchButtonClicked(View view) {
         String textName = getInputOfTextField(R.id.searchBar);
         RecycleInfo ri = new RecycleInfo();
-        String result = ri.isRecyclable(textName);
-        if(result.equals("recycle")) {
+        String result = ri.getType(textName);
+        if(result.equals("blue")) {
             outputDisposalMethod("recycle");
         }
         else if(result.equals("garbage")) {
             outputDisposalMethod("garbage");
         }
-        else if(result.equals("organics")){
+        else if(result.equals("green")){
             outputDisposalMethod("organics");
         }
         else {

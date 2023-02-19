@@ -5,17 +5,22 @@ import java.util.List;
 
 public class RecycleInfo {
     List<String> blueBin;
+    List<String> greenBin;
     List<String> garbage;
 
     public RecycleInfo() {
+    	// initialize lists
         blueBin = new ArrayList<>();
+        greenBin = new ArrayList<>();
         garbage = new ArrayList<>();
 
-        loadRecycleInfo();
+        // load list elements
+        loadBlueBinInfo();
+        loadGreenBinInfo();
         loadGarbageInfo();
     }
 
-    private void loadRecycleInfo() { // Helper for constructor: It updates arrayLists
+    private void loadBlueBinInfo() { // Helper for constructor: It updates arrayLists
         blueBin.add("glass");
         blueBin.add("glass bottle");
         blueBin.add("glass jar");
@@ -63,7 +68,10 @@ public class RecycleInfo {
         blueBin.add("fish tray");
         blueBin.add("protective packaging");
     }
-
+    private void loadGreenBinInfo() { // Helper for constructor: It updates arrayLists
+    	// to do
+    }
+    
     private void loadGarbageInfo() { // Helper for constructor: It updates arrayLists
         garbage.add("milk container");
         garbage.add("juice bottle");
@@ -108,7 +116,10 @@ public class RecycleInfo {
         String itemLowercase = item.toLowerCase(); // for removing case sensitive
 
         if (blueBin.contains(itemLowercase)) {
-            return "blue bin";
+            return "blue";
+        }
+        else if (greenBin.contains(itemLowercase)) {
+            return "green";
         }
         else if (garbage.contains(itemLowercase)) {
             return "garbage";
